@@ -1,8 +1,7 @@
+import { Link } from "react-router-dom";
+
+
 const Header = () =>  {
-
-
-
-;
 
     return (
       <div className="content row">
@@ -28,16 +27,19 @@ const Header = () =>  {
     <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
       <ul className="navbar-nav ">
         <li className="nav-item">
-          <a className="nav-link active" href="#">Home</a>
+          <Link className="nav-link active" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Formation en Ligne</a>
+          <Link className="nav-link" to="/Formation">Formation en Ligne</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Présentiel</a>
+          <Link className="nav-link" to="/Presentiel">Présentiel</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
+          <Link className="nav-link" to="/Register">Register</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Contact">Contact</Link>
         </li>
       </ul>
     </div>
