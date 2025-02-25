@@ -109,6 +109,8 @@ const Register = () =>{
 
       <button type="submit" className="btn btn-primary w-100">S'inscrire</button>
     </form>
+
+    { errors && <p className="bg-danger"> { errors}</p>}
   </div>
 
 
